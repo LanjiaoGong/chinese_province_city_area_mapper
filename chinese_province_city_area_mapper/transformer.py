@@ -22,11 +22,12 @@ class CPCATransformer:
         lines = []
         for line in data:
             lines.append(Record(line, cut, lookahead).pca_map(self.umap))
-        
-        import logging
-        if len(SuperMap.rep_area_set) != 0:
-            logging.warning("建议添加到umap中的区有：" + str(SuperMap.rep_area_set)
-             + ",有多个市含有相同名称的区")
+
+        # 在大量解析淘宝收货地址时,速度比较慢,所以去掉警告.
+        # import logging
+        # if len(SuperMap.rep_area_set) != 0:
+        #     logging.warning("建议添加到umap中的区有：" + str(SuperMap.rep_area_set)
+        #      + ",有多个市含有相同名称的区")
             
         import pandas as pd
         result = pd.concat(lines, ignore_index=True)

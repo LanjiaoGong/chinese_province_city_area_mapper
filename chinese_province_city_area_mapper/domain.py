@@ -58,7 +58,7 @@ class Location:
     def __city_and_province(self):
         if self.city.isNotEmpty() and self.province.isNotEmpty():
             if not self.city.isBlong(self.province.name):
-                if self.city.precision > self.province.precision:
+                if self.city.precision >= self.province.precision:
                     self.province.name = self.city.belong
                 else:
                     self.city.reset()
