@@ -127,7 +127,7 @@ requires = ['pandas(>=0.20.0)',
            ]  
 
 
-setup(name='cpca',
+setup(name='cpca-fix',
       version='0.3.5',
       description='Chinese Province, City and Area Recognition Utilities',
       long_description=LONGDOC,
