@@ -133,7 +133,7 @@ setup(name='cpca-fix',
       long_description=LONGDOC,
       author='DQinYuan',
       author_email='sa517067@mail.ustc.edu.cn',
-      url='https://github.com/DQinYuan/chinese_province_city_area_mapper',
+      url='https://github.com/LanjiaoGong/chinese_province_city_area_mapper',
       license="MIT",
       classifiers=[
         'Intended Audience :: Developers',
